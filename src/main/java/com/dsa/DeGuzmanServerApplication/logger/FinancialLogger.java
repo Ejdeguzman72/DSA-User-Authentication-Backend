@@ -15,7 +15,7 @@ public class FinancialLogger {
 	{
 		FileHandler financialHandler;
 		
-		financialHandler = new FileHandler("C:\\Users\\ejdeg\\DeGuzmanServerApplication\\DeGuzmanServerApplication\\log\\financial-logger.log");
+		financialHandler = new FileHandler("C:\\EJ-Projects\\EJ-Application-DSA\\Project-DSA-Authentication-Backend\\log\\financial-logger.log");
 		financialLogger.addHandler(financialHandler);
 		financialLogger.info(logMessage);
 		

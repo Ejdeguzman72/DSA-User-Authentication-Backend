@@ -2,14 +2,36 @@
 <!DOCTYPE log SYSTEM "logger.dtd">
 <log>
 <record>
-  <date>2020-02-01T23:23:54</date>
-  <millis>1580621034140</millis>
-  <sequence>4</sequence>
+  <date>2020-04-14T22:51:44</date>
+  <millis>1586922704046</millis>
+  <sequence>16</sequence>
   <logger>javassist.bytecode.stackmap.TypeData$ClassName</logger>
   <level>INFO</level>
   <class>com.dsa.DeGuzmanServerApplication.logger.FinancialLogger</class>
-  <method>infoLog</method>
-  <thread>33</thread>
-  <message>Retrieved all card information</message>
+  <method>log</method>
+  <thread>87</thread>
+  <message>Retrieved all Transaction Information</message>
+</record>
+<record>
+  <date>2020-04-14T23:04:14</date>
+  <millis>1586923454133</millis>
+  <sequence>27</sequence>
+  <logger>javassist.bytecode.stackmap.TypeData$ClassName</logger>
+  <level>INFO</level>
+  <class>com.dsa.DeGuzmanServerApplication.logger.FinancialLogger</class>
+  <method>log</method>
+  <thread>137</thread>
+  <message>Retrieved all Transaction Information</message>
+</record>
+<record>
+  <date>2020-04-14T23:04:53</date>
+  <millis>1586923493552</millis>
+  <sequence>28</sequence>
+  <logger>javassist.bytecode.stackmap.TypeData$ClassName</logger>
+  <level>INFO</level>
+  <class>com.dsa.DeGuzmanServerApplication.logger.FinancialLogger</class>
+  <method>log</method>
+  <thread>138</thread>
+  <message>Retrieved transaction information for ID:</message>
 </record>
 </log>

@@ -17,10 +17,11 @@ import com.dsa.DeGuzmanServerApplication.config.JwtTokenUtil;
 import com.dsa.DeGuzmanServerApplication.models.JwtRequest;
 import com.dsa.DeGuzmanServerApplication.models.JwtResponse;
 import com.dsa.DeGuzmanServerApplication.models.UserDTO;
+import com.dsa.DeGuzmanServerApplication.models.Users;
 import com.dsa.DeGuzmanServerApplication.service.JwtUserDetailsService;
 
 @RestController
-@CrossOrigin(origins = "http://localhost:3000")
+@CrossOrigin
 public class JwtAuthenticationController {
 
 	@Autowired
@@ -32,7 +33,6 @@ public class JwtAuthenticationController {
 	@Autowired
 	private JwtUserDetailsService userDetailsService;
 
-	@CrossOrigin(origins = "http://localhost:3000")
 	@RequestMapping(value = "/authenticate", method = RequestMethod.POST)
 	public ResponseEntity<?> createAuthenticationToken(@RequestBody JwtRequest authenticationRequest) throws Exception {
 
@@ -47,7 +47,7 @@ public class JwtAuthenticationController {
 
 	@CrossOrigin(origins = "http://localhost:3000")
 	@RequestMapping(value = "/register", method = RequestMethod.POST)
-	public ResponseEntity<?> saveUser(@RequestBody UserDTO user) throws Exception {
+	public ResponseEntity<?> saveUser(@RequestBody Users user) throws Exception {
 		return ResponseEntity.ok(userDetailsService.save(user));
 	}
 

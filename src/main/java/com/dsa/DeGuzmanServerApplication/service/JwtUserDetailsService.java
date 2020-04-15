@@ -13,12 +13,13 @@ import org.springframework.stereotype.Service;
 
 import com.dsa.DeGuzmanServerApplication.models.UserDTO;
 import com.dsa.DeGuzmanServerApplication.models.Users;
+import com.dsa.DeGuzmanServerApplication.repository.UserDao;
 
 @Service
 public class JwtUserDetailsService implements UserDetailsService {
 
 	@Autowired
-	private com.dsa.DeGuzmanServerApplication.repository.UserDao userDao;
+	private UserDao userDao;
 
 	@Autowired
 	private PasswordEncoder bcryptEncoder;
@@ -33,7 +34,7 @@ public class JwtUserDetailsService implements UserDetailsService {
 				new ArrayList<>());
 	}
 
-	public Users save(UserDTO user) {
+	public Users save(Users user) {
 		Users newUser = new Users();
 		newUser.setUsername(user.getUsername());
 		newUser.setPassword(bcryptEncoder.encode(user.getPassword()));

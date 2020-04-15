@@ -89,4 +89,11 @@ public class Contact {
 		this.email = emaill;
 	}
 	
+	@Override
+	public String toString() {
+		return "Contact [contactid=" + contactid + ", firstname=" + firstname + ", lastname=" + lastname + ", phone="
+				+ phone + ", email=" + email + ", address=" + address + ", city=" + city + ", state=" + state
+				+ ", zipcode=" + zipcode + "]";
+	}
+	
 }

@@ -16,4 +16,13 @@ public class DeGuzmanServerApplication {
 		int port = 8080;
 		System.out.println("Application running on port: " + port);
 	}
+	
+	@Bean
+	public WebMvcConfigurer corsConfigurer() {
+		return new WebMvcConfigurer() {
+			public void addCorsMapping(CorsRegistry registry ) {
+				registry.addMapping("/app/contact-book/all").allowedOrigins("http://lcoalhost/3000");
+			}
+		};
+	}
 }

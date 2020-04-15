@@ -15,7 +15,7 @@ public class MedicalLogger {
 	{
 		FileHandler medicalHandler;
 		
-		medicalHandler = new FileHandler("C:\\Users\\ejdeg\\DeGuzmanServerApplication\\DeGuzmanServerApplication\\log\\medical-logger.log");
+		medicalHandler = new FileHandler("C:\\\\EJ-Projects\\\\EJ-Application-DSA\\\\Project-DSA-Authentication-Backend\\\\log\\\\medical-logger.log");
 		medicalLogger.addHandler(medicalHandler);
 	}
 }

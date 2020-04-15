@@ -16,7 +16,7 @@ public class ContactLogger {
 		
 		FileHandler contactFileHandler;
 		
-		contactFileHandler = new FileHandler("C:\\Users\\ejdeg\\DeGuzmanServerApplication\\DeGuzmanServerApplication\\log\\contact-logger.log");
+		contactFileHandler = new FileHandler("C:\\EJ-Projects\\EJ-Application-DSA\\Project-DSA-Authentication-Backend\\log\\contact-logger.log");
 		contactLogger.addHandler(contactFileHandler);
 	}
 	

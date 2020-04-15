@@ -31,7 +31,6 @@ public class JwtRequestFilter extends OncePerRequestFilter {
 			throws ServletException, IOException 
 	{
 		final String requestTokenHeader = request.getHeader("Authorization");
-		System.out.println(requestTokenHeader + "this is the token");
 		String username = null;
 		String jwtToken = null;
 		
@@ -52,10 +51,6 @@ public class JwtRequestFilter extends OncePerRequestFilter {
 			catch (ExpiredJwtException e) 
 			{
 				System.out.println("JWT Token has expired");
-			}
-			catch (NullPointerException e)
-			{
-				System.out.println("this is null");
 			}
 		} 
 		else 

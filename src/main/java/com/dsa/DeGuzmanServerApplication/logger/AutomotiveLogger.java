@@ -15,7 +15,7 @@ public class AutomotiveLogger {
 	{
 		FileHandler automotiveHandler;
 		
-		automotiveHandler = new FileHandler("C:\\Users\\ejdeg\\DeGuzmanServerApplication\\DeGuzmanServerApplication\\log\\automotive-logger.log");
+		automotiveHandler = new FileHandler("C:\\EJ-Projects\\EJ-Application-DSA\\Project-DSA-Authentication-Backend\\log\\automotive-logger.log");
 		automotiveLogger.addHandler(automotiveHandler);
 	}
 	
