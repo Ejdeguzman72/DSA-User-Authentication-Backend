@@ -21,7 +21,7 @@ public class DeGuzmanServerApplication {
 	public WebMvcConfigurer corsConfigurer() {
 		return new WebMvcConfigurer() {
 			public void addCorsMapping(CorsRegistry registry ) {
-				registry.addMapping("/app/contact-book/all").allowedOrigins("http://lcoalhost/3000");
+				registry.addMapping("/app/contact-book/all").allowedOrigins("http://localhost/3000");
 			}
 		};
 	}
